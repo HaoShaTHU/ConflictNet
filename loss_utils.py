@@ -2,7 +2,6 @@ import torch.nn as nn
 import torch
 import torchsort
 import torch.nn.functional as F
-from sklearn.metrics import average_precision_score, roc_auc_score, precision_recall_curve, auc
 import numpy as np
 
 class FocalLoss(nn.Module):
