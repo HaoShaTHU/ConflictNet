@@ -49,13 +49,6 @@ class Conflict_DataSet(Dataset):
         self.idx_month = np.stack(self.idx_month, axis=0) # [T, N]
         self.num_data = self.death_day.shape[0]
 
-        # if val:
-        #     start = 10*365 + 180 - 10 * 30 - 10*30
-        #     end = 11*365 + 180 + 10*30
-        #     self.death_day = self.death_day[start:end]
-        #     self.month_idx = self.month_idx[start:end]
-        #     self.num_data = self.death_day.shape[0]
-
         self.adj4 = np.load('/root/autodl-tmp/prediction_npy/finetune/nn_idx4.npy') - 1
         self.adj25 = np.load('/root/autodl-tmp/prediction_npy/nn_idx25new.npy') - 1
         # Let the center node be the first node
