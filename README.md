@@ -1,3 +1,3 @@
 # ConflictNet
 # Dataset
-You can download the VIEWS dataset at https://viewsforecasting.org/prediction-competition-2/
+VIEWS dataset is available at https://viewsforecasting.org/prediction-competition-2/
