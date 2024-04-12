@@ -5,7 +5,6 @@ import time
 import random
 import matplotlib.pyplot as plt
 
-# 265, 361
 class Conflict_DataSet(Dataset):
     def __init__(self, path, num_bound=285, step=25, long_term=5, short_term=1, window=1, diffuse_step=10, val=False, spatial=False):
         self.basedir = path
@@ -17,7 +16,6 @@ class Conflict_DataSet(Dataset):
         self.k = self.step_per_month // self.diffuse_step_per_month
         assert self.step_per_month % self.diffuse_step_per_month == 0
 
-        # FIXME
         self.months = [
             file[-7:-4] for file in
             sorted(os.listdir(os.path.join(path, 'features_reshape')))
